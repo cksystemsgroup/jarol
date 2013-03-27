@@ -1,0 +1,293 @@
+html
+{
+	margin: 0;
+	padding: 0;
+	color: #000000;
+	background: #f9f9f9 url(bg.png) -20% 0 repeat-y; /*color field in the background*/
+	font: normal 12px "Trebuchet MS", "Lucida Grande", Verdana, Georgia, Sans-Serif;
+}
+
+/* Links */
+
+a:link { text-decoration: none; color: #335577; border-bottom: 1px dotted #335577; font-weight: bold; }
+
+a:visited { text-decoration: none; color: #3f7e86; border-bottom: 1px dotted #3f7e86; font-weight: bold; }
+
+a:hover, a:active { color: #990000; border-bottom: 1px solid #990000; }
+
+/* Html Elements */
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; margin: 10px 0; padding: 0; }
+
+h1 a:link, h2 a:link, h3 a:link, h4 a:link, h5 a:link, h6 a:link,
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited
+{ 
+	font-weight: normal; 
+	border-bottom-width: 0; 
+}
+
+h1 { font-size: 28px; }
+h2 { font-size: 26px; }
+h3 { font-size: 24px; }
+h4 { font-size: 20px; }
+h5 { font-size: 18px; }
+h6 { font-size: 16px; }
+
+ul, ol, blockquote, pre
+{
+	color: #444444;
+	padding: 10px 10px 10px 30px;
+	line-height: 1.8em;
+}
+
+ul { list-style-type: square; }
+
+blockquote, pre { background-color: #eaeadf; border: 1px solid #cfcfcf; }
+
+ins { text-decoration: none; color: #9e624a; }
+
+del { color: #555555; }
+
+table
+{
+	width: 90%; 
+	color: #333333;
+	margin: 10px 10px 20px;
+	border-left: 1px solid #cbcbb4;
+	border-top: 1px solid #cbcbb4;
+}
+
+table caption 
+{ 
+	margin: 10px 0 5px; 
+	font-weight: bold;
+}
+
+th, td
+{
+	border-right: 1px solid #cbcbb4;
+	border-bottom: 1px solid #cbcbb4;
+	padding: 2px 10px;
+}
+
+th { background-color: #e0e0cf; }
+
+tr.alt td { background-color: #eaeadf; }
+
+/* Structure */
+
+body { margin: 0; padding: 0; }
+
+/*CHANGE THIS!!!!!!!!!*/
+#topnav /* Top Navigation: TODO change color for Project*/
+{
+	float: left;
+	width: 100%;
+	color: #cfcfcf;
+	background-color: #0b0b0b;
+	border-bottom: 1px solid #000000;
+}
+
+/*CHANGE THIS!!!!!!!!!*/
+#header /* Header: TODO change color for Project, this is where the Project name is written*/
+{
+	float: left;
+	width: 100%;
+	clear: both;
+	color: #e2ebec; /*This is the normal textcolor, but usually you may have link text here!!! So I might not change, change the colors below*/
+	background: url(banner.png) 100% no-repeat;	
+	background-color: #363b37;
+	border-bottom: 1px solid #000000;	
+}
+
+#navigation  /* Navigation: don't change!*/
+{
+	float: left;
+	width: 100%;
+	clear: both;
+	color: #555555;
+	background-color: #f1efe3;
+	border-bottom: 1px solid #cfcfcf;
+}
+
+#wrapper /* Wrapper determines the size - this can maybe skipped, but is useful if you wanna have additional columns beside the content */
+{
+	clear: both;
+	width: 800px;
+	margin: 0 auto;
+}
+
+#content-wrapper /* wrapper for content */
+{
+	width: 75%; /*indicates the partition of space that is taken from wrapper width */
+	float: left;
+	line-height: 1.8em;
+}
+
+#picture-wrapper /*jarol specific*/
+{
+	width: 25%; /*indicates the partition of space that is taken from wrapper width */
+	float: right;
+	line-height: 1.8em;
+}
+
+/* EXAMPLE for an additional column in the main section
+#additional-column // wrapper for content 
+{
+	width: 40%; //indicates the partition of space that is taken from wrapper width (the sum with others should be 100 %)
+	float: left;
+	line-height: 1.8em;
+}*/
+
+#content //content format stuff
+{
+	float: right;
+	text-align:right;
+	padding: 10px;
+	margin-right: 30px;
+}
+
+#picture-bar
+{
+	float: left;
+	text-align:center; /*center pictures*/
+	padding: 20px;
+
+}
+
+/*CHANGE THIS!!!!!!!!!*/
+#footer
+{
+	clear: both;
+	float: left;
+	width: 100%;
+	color: #e7d5ca;
+	text-align: center; 
+	background-color: #3b3b3b;
+}
+#footer #about
+{
+	width: 33%;
+	float: left;
+	text-align: left; 
+        font-size: 10px;
+	font-weight: regular;
+        padding: 5px 10px; 
+	margin-left: 130px
+}
+
+#footer #logo
+{
+	width: 33%;
+	height: 80px;
+	float: right;
+	text-align: left; 
+	background: url(logo_small.png) 100% no-repeat ;
+        padding: 5px 10px; 
+}
+
+/* Top-Nav */
+
+#topnav ul
+{
+	margin: 0;
+	width: 95%;
+	float: left;
+	padding: 0 5px;
+	list-style-type: none;
+}
+
+#topnav li { float: left; } /*topnav values for link, visited link,... colors etc.*/
+#topnav li a:link,
+#topnav li a:visited
+{
+	float: left;
+	color: #e7d5ca;
+	display: block;
+	padding: 0 10px;
+	margin: 3px 0;
+	font-weight: normal;
+	border-bottom-width: 0;
+	border-right: 1px solid #666666;
+}
+
+#topnav li a:hover,
+#topnav li a:active
+{
+	color: #d7d6d5;
+}
+
+/* Header */
+/*CHANGE THIS!!!!!!!!!*/
+
+#header a:link { color: #e2ebec; border-bottom-color: #f1efe3; }
+
+#header a:visited { color: #e2ebec; border-bottom-color: #eae7d2; }
+
+#header a:hover, #header a:active { color: #ffffff; border-bottom-color: #ffffff; }
+
+#header h1 { padding: 20px 10px; }
+
+/* Navigation */
+
+#navigation ul
+{
+	margin: 0;
+	width: 95%;
+	float: left;
+	padding: 0 10px; 
+	list-style-type: none;
+}
+
+#navigation li { float: left; }
+
+#navigation li a:link,
+#navigation li a:visited
+{
+	float: left;
+	margin: 8px 2px;
+	color: #3f3126;
+	display: block;
+	padding: 5px 8px;
+	border-bottom-width: 0;
+}
+
+#navigation li a:hover,
+#navigation li a:active
+{
+	color: #ffffff;
+	background-color: #848280;
+}
+
+/*for menu selection boxes*/
+body#bhome li#lhome a,
+body#bteam li#lteam a,
+body#bsoftware li#lsoftware a,
+body#bpublications li#lpublications a,
+body#blinks li#llinks a
+{
+	color: #000000;
+	background-color: #c8c3ad;
+}
+
+
+
+/* Footer */
+
+#footer a:link
+{
+	color: #9c9084; border-bottom-color: #9c9084; 
+}
+
+#footer a:visited
+{
+	color: #7a7062; border-bottom-color: #7a7062; 
+}
+
+#footer a:hover, #footer a:active
+{
+	color: #bfb2a6; border-bottom-color: #bfb2a6;
+}
+
+#footer ul, #footer ol { color: #7a7062; line-height: 2.5em; }
+
